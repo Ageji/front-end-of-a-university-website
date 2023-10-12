@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>university website design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+ 
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+      <div class="nav-links"id="navLinks">
+        <i class="fa fa-times"  onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our COURSES</h1>
+  </section>
+
+  <!--course-->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>We offer various cousres to help grow your programming skills</p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <P>HTML,CSS</p>
+      </div>
+
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>JAVASCRIPT, REACT</p>
+      </div>
+
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>NODE.JS ANGULAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faciliates">
+    <h1>Our Facilities </h1>
+    <p>Equipped with the best things for you</p>
+
+    <div class="row">
+      <div class="faciliates-col">
+        <img src="eduford_img/library.png" alt="">
+        <h3>World Class Library</h3>
+        <p>A web development library is a collection of pre-written code, functions, and tools that streamline and simplify the process of creating websites and web applications. These libraries often include commonly used features, such as user interface components, data handling, and interaction with web technologies, allowing developers to save time and effort by reusing these building blocks rather than starting from scratch. Popular web development libraries include jQuery for client-side scripting, React for building user interfaces, and Express for server-side web application development.</p>
+      </div>
+
+      <div class="faciliates-col">
+        <img src="eduford_img/basketball.png" alt="">
+        <h3>Largest Play Ground</h3>
+        <p>A web development library for a playground is a set of code and resources specifically designed for creating interactive and engaging web-based games or playful applications. These libraries often provide functions for handling game physics, user input, animations, and other game-related features to make it easier for developers to create fun and interactive experiences in the web browser. Examples of such libraries include Phaser for 2D game development and Three.js for 3D graphics and WebGL-based experiences.</p>
+      </div>
+
+      <div class="faciliates-col">
+        <img src="eduford_img/cafeteria.png" alt="">
+        <h3>Tasty and Healthy Food</h3>
+        <p>LA web development library for a cafeteria is a toolkit of code and tools tailored to help create web applications for managing and enhancing cafeteria-related functions. These libraries might include features like menu display, order management, payment processing, and reservation systems, simplifying the development of websites or applications for cafeterias. An example could be a library that integrates with restaurant management software, offering ready-made components for building online ordering platforms and menus tailored for cafeterias or dining establishments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <section class="footer">
+    <h4>About US</h4>
+    <p>Our is a prestigious institution with a rich history of academic excellence and a commitment to providing a world-class learning environment. We offer a diverse range of programs, a vibrant campus life, a strong focus on research and innovation, and a global perspective. Our dedicated faculty, engaged community, and successful alumni network contribute to our mission of inspiring the next generation of leaders and scholars.Explore our website to discover the opportunities that await you. Welcome to a place where education meets excellence.</p>
+    <div class="icons">
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-Link"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+  </section>
+
+
+<!---JavaScript for toggle menu-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
